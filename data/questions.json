@@ -1,1 +1,100 @@
-
+[
+  {
+    "id": "f1_q1",
+    "book": "Foundations of Risk Management",
+    "chapter": "Chapter 1: The Building Blocks of Risk Management",
+    "type": "qcm",
+    "question": "Quel élément décrit le mieux le risque ?",
+    "options": [
+      "La certitude d’obtenir une perte",
+      "La possibilité que le résultat réel diffère du résultat attendu",
+      "L’absence totale de volatilité",
+      "Une baisse temporaire du prix d’un actif"
+    ],
+    "answer": 1,
+    "explanation": "Le risque mesure l'incertitude et l'écart possible entre l'attendu et le réalisé."
+  },
+  {
+    "id": "f1_q2",
+    "book": "Foundations of Risk Management",
+    "chapter": "Chapter 1: The Building Blocks of Risk Management",
+    "type": "qcm",
+    "question": "Quel type de risque est le plus directement lié au défaut d’un emprunteur ?",
+    "options": [
+      "Risque de marché",
+      "Risque opérationnel",
+      "Risque de crédit",
+      "Risque de modèle"
+    ],
+    "answer": 2,
+    "explanation": "Le défaut d’un emprunteur correspond au risque de crédit."
+  },
+  {
+    "id": "qa6_q1",
+    "book": "Quantitative Analysis",
+    "chapter": "Chapter 6: Hypothesis Testing",
+    "type": "qcm",
+    "question": "Dans un test au seuil de 5%, quand rejette-t-on H0 ?",
+    "options": [
+      "Quand la p-value est supérieure à 0,05",
+      "Quand la p-value est inférieure à 0,10",
+      "Quand la p-value est inférieure à 0,05",
+      "Quand la statistique de test est nulle"
+    ],
+    "answer": 2,
+    "explanation": "Au seuil alpha = 5%, on rejette H0 si la p-value est inférieure à 0,05."
+  },
+  {
+    "id": "qa6_q2",
+    "book": "Quantitative Analysis",
+    "chapter": "Chapter 6: Hypothesis Testing",
+    "type": "qcm",
+    "question": "Une erreur de type I consiste à :",
+    "options": [
+      "Ne pas rejeter H0 alors qu’elle est fausse",
+      "Rejeter H0 alors qu’elle est vraie",
+      "Augmenter la taille d’échantillon",
+      "Utiliser une mauvaise moyenne"
+    ],
+    "answer": 1,
+    "explanation": "Type I = faux positif : on rejette H0 alors qu’elle est en réalité vraie."
+  },
+  {
+    "id": "fmp4_q1",
+    "book": "Financial Markets and Products",
+    "chapter": "Chapter 4: Introduction to Derivatives",
+    "type": "qcm",
+    "question": "Quelle affirmation distingue le mieux une option d’un forward ?",
+    "options": [
+      "Le forward est standardisé mais l’option ne l’est jamais",
+      "L’option donne un droit, le forward crée une obligation bilatérale",
+      "Le forward ne dépend d’aucun sous-jacent",
+      "L’option n’a aucun payoff asymétrique"
+    ],
+    "answer": 1,
+    "explanation": "L’option crée un droit sans obligation pour l’acheteur, contrairement au forward."
+  },
+  {
+    "id": "vrm2_q1",
+    "book": "Valuation and Risk Models",
+    "chapter": "Chapter 2: Calculating and Applying VaR",
+    "type": "qcm",
+    "question": "Une VaR 99% à 1 jour de 2 M€ signifie que :",
+    "options": [
+      "La perte maximale sera de 2 M€",
+      "Il y a 99% de chances de gagner 2 M€",
+      "Il y a environ 1% de chances de perdre plus de 2 M€ en un jour",
+      "La perte moyenne quotidienne sera de 2 M€"
+    ],
+    "answer": 2,
+    "explanation": "La VaR est un quantile de pertes : à 99%, il reste environ 1% de probabilité de dépasser ce seuil."
+  },
+  {
+    "id": "qa6_free_1",
+    "book": "Quantitative Analysis",
+    "chapter": "Chapter 6: Hypothesis Testing",
+    "type": "free",
+    "question": "Explique en 3 lignes la différence entre une erreur de type I et une erreur de type II.",
+    "model_answer": "Une erreur de type I consiste à rejeter l’hypothèse nulle alors qu’elle est vraie. Une erreur de type II consiste à ne pas rejeter l’hypothèse nulle alors qu’elle est fausse. Le seuil alpha contrôle le risque de type I, tandis que la puissance du test dépend de 1 - beta."
+  }
+]

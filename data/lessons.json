@@ -1,0 +1,146 @@
+{
+  "Foundations of Risk Management|Chapter 1: The Building Blocks of Risk Management": {
+    "subtitle": "Comprendre ce qu'est le risque et les briques de base de sa gestion.",
+    "steps": [
+      {
+        "label": "Concept",
+        "title": "Qu’est-ce que le risque ?",
+        "body": "Le risque correspond à la possibilité qu’un résultat réel diffère du résultat attendu. En finance, cela inclut bien sûr la possibilité de pertes, mais aussi plus largement l’incertitude entourant les cash-flows, la valeur de marché et la solvabilité.",
+        "takeaway": "Le risque n’est pas seulement une perte : c’est l’écart possible entre ce que l’on attend et ce qui arrive réellement.",
+        "example": "Un fonds obligataire attend une performance de +3%. Si un choc de taux provoque -2%, l’écart à l’attendu matérialise le risque.",
+        "essentials": [
+          "Le risque est lié à l’incertitude.",
+          "Il peut être financier ou non financier.",
+          "Il doit être identifié avant d’être mesuré puis géré."
+        ]
+      },
+      {
+        "label": "Types",
+        "title": "Les grandes familles de risque",
+        "body": "Les principaux risques vus au FRM Part I sont le risque de marché, de crédit, de liquidité, opérationnel et parfois juridique ou de réputation. Chaque famille a ses propres métriques et outils de gestion.",
+        "takeaway": "Commencer par bien classifier le risque aide à choisir les bons outils de mesure.",
+        "example": "Perte sur action = risque de marché ; défaut d’un emprunteur = risque de crédit ; incapacité à vendre vite un actif = risque de liquidité.",
+        "essentials": [
+          "Marché = variation de prix ou de taux.",
+          "Crédit = défaut / dégradation de la qualité de crédit.",
+          "Liquidité = coût ou difficulté à se financer / vendre.",
+          "Opérationnel = process, systèmes, fraude, erreur humaine."
+        ]
+      },
+      {
+        "label": "Cadre",
+        "title": "Le cycle de gestion du risque",
+        "body": "Une organisation performante passe en général par un cycle : identifier les risques, les mesurer, fixer des limites, surveiller, rapporter et ajuster les actions de couverture ou de mitigation.",
+        "takeaway": "Le risk management est un processus continu, pas un calcul isolé.",
+        "example": "Une banque fixe une limite de VaR, la suit chaque jour, et ajuste ses positions si la limite est dépassée.",
+        "essentials": [
+          "Identification",
+          "Mesure",
+          "Contrôle / limites",
+          "Reporting",
+          "Action correctrice"
+        ]
+      }
+    ]
+  },
+  "Quantitative Analysis|Chapter 6: Hypothesis Testing": {
+    "subtitle": "Formuler, tester et interpréter des hypothèses statistiques dans un contexte de risque.",
+    "steps": [
+      {
+        "label": "Concept",
+        "title": "Tester une hypothèse",
+        "body": "Un test d’hypothèse permet de décider, à partir d’un échantillon, s’il existe suffisamment d’éléments pour rejeter une hypothèse nulle H0. On compare soit une statistique de test à une valeur critique, soit une p-value à un seuil de significativité.",
+        "takeaway": "On ne ‘prouve’ pas H0 : on décide seulement si les données donnent assez d’évidence contre elle.",
+        "example": "H0 : la moyenne des rendements d’un portefeuille est égale à 0. H1 : elle est positive.",
+        "essentials": [
+          "H0 = hypothèse de référence",
+          "H1 = hypothèse alternative",
+          "Si p-value < alpha, on rejette H0"
+        ]
+      },
+      {
+        "label": "Erreurs",
+        "title": "Type I et Type II",
+        "body": "Une erreur de type I consiste à rejeter H0 alors qu’elle est vraie. Une erreur de type II consiste à ne pas rejeter H0 alors qu’elle est fausse. Le seuil alpha contrôle le risque de type I.",
+        "takeaway": "Baisser alpha réduit le risque de type I, mais peut augmenter le risque de type II.",
+        "example": "Conclure à tort qu’une stratégie alpha est rentable alors qu’elle ne l’est pas est une erreur de type I.",
+        "essentials": [
+          "Type I = faux positif",
+          "Type II = faux négatif",
+          "Puissance = 1 - beta"
+        ]
+      },
+      {
+        "label": "Décision",
+        "title": "p-value et règle de décision",
+        "body": "La p-value mesure la probabilité d’observer un résultat au moins aussi extrême que celui obtenu, si H0 est vraie. Plus elle est faible, plus l’évidence contre H0 est forte.",
+        "takeaway": "Une p-value inférieure à 5% signifie qu’au seuil de 5%, on rejette H0.",
+        "example": "p-value = 0,03 avec alpha = 0,05 -> rejet de H0.",
+        "essentials": [
+          "Comparer p-value à alpha",
+          "Le seuil usuel est 5%",
+          "Attention à bien distinguer significativité statistique et importance économique"
+        ]
+      }
+    ]
+  },
+  "Financial Markets and Products|Chapter 4: Introduction to Derivatives": {
+    "subtitle": "Poser les bases des forwards, futures, swaps et options.",
+    "steps": [
+      {
+        "label": "Concept",
+        "title": "Qu’est-ce qu’un dérivé ?",
+        "body": "Un dérivé est un instrument dont la valeur dépend d’un sous-jacent : taux, action, devise, matière première, indice de crédit, etc.",
+        "takeaway": "Le dérivé n’a pas de valeur autonome : sa valeur vient du sous-jacent et des termes du contrat.",
+        "example": "Une option call sur une action prend de la valeur si l’action monte.",
+        "essentials": [
+          "Sous-jacent",
+          "Payoff conditionnel",
+          "Hedging, spéculation, arbitrage"
+        ]
+      },
+      {
+        "label": "Produits",
+        "title": "Forwards, futures, swaps, options",
+        "body": "Les forwards et futures créent une obligation d’échanger à une date future. Les swaps échangent des flux. Les options donnent un droit mais non une obligation.",
+        "takeaway": "L’option se distingue des autres dérivés par son asymétrie.",
+        "example": "Un call permet d’acheter un actif à un prix fixé ; si le marché baisse, l’acheteur peut ne pas exercer.",
+        "essentials": [
+          "Forward = OTC",
+          "Future = standardisé et coté",
+          "Swap = échange de flux",
+          "Option = droit, pas obligation"
+        ]
+      }
+    ]
+  },
+  "Valuation and Risk Models|Chapter 2: Calculating and Applying VaR": {
+    "subtitle": "Mesurer la perte potentielle d’un portefeuille à un horizon et un niveau de confiance donnés.",
+    "steps": [
+      {
+        "label": "Concept",
+        "title": "Value at Risk",
+        "body": "La VaR d’un portefeuille est la perte seuil qui ne devrait être dépassée qu’avec une certaine faible probabilité sur un horizon donné. Par exemple, une VaR 99% à 1 jour de 2 M€ signifie qu’il y a environ 1% de chances de perdre plus de 2 M€ en un jour.",
+        "takeaway": "La VaR donne un quantile de pertes, pas une perte maximale.",
+        "example": "Portefeuille de trading avec VaR 95% = 1 M€ : cinq jours sur cent environ, la perte peut dépasser 1 M€.",
+        "essentials": [
+          "Horizon",
+          "Niveau de confiance",
+          "Perte seuil"
+        ]
+      },
+      {
+        "label": "Méthodes",
+        "title": "Paramétrique, historique, Monte Carlo",
+        "body": "La VaR peut être calculée par approche paramétrique (variance-covariance), par simulation historique ou par simulation Monte Carlo. Chaque méthode a ses forces et ses limites.",
+        "takeaway": "Le choix de méthode dépend de la complexité du portefeuille et des hypothèses acceptées.",
+        "example": "La VaR paramétrique est rapide mais suppose souvent une certaine normalité des rendements.",
+        "essentials": [
+          "Paramétrique = rapide mais simplificatrice",
+          "Historique = intuitive mais dépend du passé",
+          "Monte Carlo = flexible mais plus coûteuse"
+        ]
+      }
+    ]
+  }
+}
